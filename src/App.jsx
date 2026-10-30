@@ -1,13 +1,13 @@
 import { useState } from "react";
-import userContextProvider from "./context/userContextProvider";
+import UserContextProvider from "./context/userContextProvider";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <userContextProvider>
-      <div>hi</div>
-    </userContextProvider>
+    <UserContextProvider>
+      <h1>hi</h1>
+    </UserContextProvider>
   );
 }
 
